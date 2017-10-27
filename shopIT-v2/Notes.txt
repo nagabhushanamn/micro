@@ -1,0 +1,74 @@
+
+
+
+
+shopIT
+---------
+
+--------------------------------------------
+
+  1. PriceMatrix  
+  
+     - getPrice(itemCode) : double
+    
+  2. Billing
+  
+     - getTotalPrice(cart) : double
+     
+ --------------------------------------------      
+ 
+S.O.L.I.D. STANDS FOR:
+
+	S — Single responsibility principle
+	O — Open for Extension & closed for modification principle
+	L — Liskov substitution principle
+	I — Interface segregation principle
+	D — Dependency Inversion principle 
+     
+     
+     
+-------------------------------------------
+
+
+
+Ex.
+
+   Door
+   
+     - open()
+     
+     - close()
+     
+     - addDoorLisner(DoorListener)
+
+     -  removeDorrListner     
+     
+     
+  DoorListener
+  
+     - on
+     - off   
+
+    
+    e.g Light,AC
+    
+ ------------------------------------------------   
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
