@@ -1,0 +1,91 @@
+
+
+OO concepts
+------------
+	
+	object
+	-------
+ 
+   -> info,data,prop,attr   ==> State
+   -> func,method,work,oprn ==> Behavior
+   -> loc,addr,ref          ==> Identity
+   
+   
+   obj ==> SBI
+   
+   -------------------------------------------
+   
+   
+   class
+   -----
+   
+   -> obj's template with state & behav d
+   
+   ------------------------------------------
+   
+   class  ==> object
+   
+   -----------------------------------------
+   
+     
+     
+     OO concepts
+     ------------
+     
+     a. Abstraction / Interface / Front-End
+     
+      why i need ?
+      
+        --> easy to use/learn
+        --> for loose-coupling b/w dependent&dependency
+        
+      b. Encapsulation / Implementation / Back-End
+      
+      why i need ?
+      
+        --> real implementation of what we abstracted.
+        --> will hide obj's complexity to dependent
+        
+      c. Inheritance
+      
+          inherit common props/behav from more generalized-class to specialized-class's objects
+      	
+      	why i need ?
+      	
+      	--> re-use common things
+      	--> easy to extend with new features
+      	
+       d. Polymorphism
+       	
+       	  one type/object will do same behav in different way, based on imput params
+          
+          why-we need?
+           
+           -> obj re-usable on diffent on different inp params
+             
+      ---------------------------------------------------------------------
+      
+      
+        
+      
+            
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+   
+   
+   
