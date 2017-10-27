@@ -1,0 +1,19 @@
+
+
+
+
+shopIT
+---------
+
+--------------------------------------------
+
+  1. PriceMatrix  
+  
+     - getPrice(itemCode) : double
+    
+  2. Billing
+  
+     - getTotalPrice(cart) : double
+     
+ --------------------------------------------       
+     
