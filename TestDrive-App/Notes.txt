@@ -1,0 +1,38 @@
+
+
+
+Java Naming conventions
+----------------------
+
+keywords  ==> L.C
+package names ==> L.C
+Type ( class,interface,enum,annotation ) names ==> Pascal-case
+var & method names  ==> Camel-case
+constants           ==> U.C
+
+--------------------------------------------------
+
+
+TestDrive
+------------
+
+
+  1. Wheel  : rotate()
+  2. Car    : move()
+  
+  ------------------------------------
+  
+  
+  how to define obj's abstraction in java-lang?
+  
+  --> using 'interface'
+  
+  how to define obj's implementation in java-lang >
+  
+  --> using 'class'
+  
+  
+  ---------------------------------------
+  
+  
+  
