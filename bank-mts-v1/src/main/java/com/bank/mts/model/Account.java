@@ -8,14 +8,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "ACCOUNTS", schema = "mts")
+@Table(name = "ACCOUNTS")
 public class Account {
 
 	@Id
 	private String num;
 	@Column(name = "balance")
 	private double balance;
-	@Column(name = "acc_type")
 	@Enumerated(EnumType.STRING)
 	private AccountType type;
 
