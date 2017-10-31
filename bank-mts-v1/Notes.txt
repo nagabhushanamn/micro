@@ -1,0 +1,106 @@
+
+
+-----------------------------
+
+// Model
+
+ a. Account
+ 
+ 	-num: string
+ 	-balance: double
+ 	-type: AccountType
+ 
+   		
+------------------------------ 	   
+
+Layer(s)
+---------
+ 
+ A. DAO/data/repository Layer  ==> persisting-logic from any data-source
+ 
+    1.AccountRepository
+    
+	    	- findOne(num)
+	    	- update(account)
+	    	- 
+    	
+ B. service/business layer ==> processing logic based on business rules
+ 
+ 
+    1. TxrService
+    
+    
+    
+       
+ 
+ 
+    	
+    	
+    	
+    	
+    -----------------------------------------------------
+    
+    
+    s/w product
+    
+     
+     - application : process
+     
+        ==> object-model
+     
+     - datasource  : persist	
+     
+     	 	
+	    	data-sources
+	    	
+	    	- files
+	    	- relational   ( we use this )
+	    	- NoSQL 
+	    	- map-reduce F.W on big-data
+	    	
+	   e.g
+	     
+        ==> relational-model 
+    	
+    	
+    	  ORM ( Object Relational Mapping )
+    	  -----------------------------------
+    	  
+    	  how to do this ORM in java-based appln ?
+    	  
+    	   --> using JDBC API  
+    	   
+    	       - complex to use
+    	       
+    	    better soln:
+    	    
+    	    -> using any ORM F.Ws
+    	    
+    	    - Hibernate ==> JBoss community
+    	    - Toplink ==> Oracle
+    	    - EclipseLink ==> Eclipse community
+    	    - IBatis  => Apache   
+    	    ...
+    	    
+    	    from java community
+    	    
+    	    - JPA ( Java Persistent API )
+    	
+    	   
+    	   
+    	    repository-layer  => to work with relational-model
+    	    
+    	    ==> JPA with Hibernate-provider
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
