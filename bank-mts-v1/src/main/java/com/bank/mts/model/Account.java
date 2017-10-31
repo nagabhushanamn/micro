@@ -16,6 +16,7 @@ public class Account {
 	@Column(name = "balance")
 	private double balance;
 	@Enumerated(EnumType.STRING)
+	@Column(name = "acc_type")
 	private AccountType type;
 
 	public Account(String num, double balance, AccountType type) {
@@ -23,6 +24,11 @@ public class Account {
 		this.num = num;
 		this.balance = balance;
 		this.type = type;
+	}
+
+	@Override
+	public String toString() {
+		return "Account [num=" + num + ", balance=" + balance + ", type=" + type + "]";
 	}
 
 	public Account() {

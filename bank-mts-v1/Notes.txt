@@ -16,29 +16,27 @@
 Layer(s)
 ---------
  
- A. DAO/data/repository Layer  ==> persisting-logic from any data-source
+ 1. DAO/data/repository Layer  ==> persisting-logic from any data-source
  
-    1.AccountRepository
+    a.AccountRepository
     
 	    	- findOne(num)
 	    	- update(account)
 	    	- 
     	
- B. service/business layer ==> processing logic based on business rules
+ 2. service/business layer    ==> processing logic based on business rules
  
- 
-    1. TxrService
+    a. TxrService
     
     
-    
-       
+ 3. web-layer                 ==> intercept http-calls
  
- 
+  
+    a. TxrController 
     	
     	
     	
-    	
-    -----------------------------------------------------
+ -----------------------------------------------------
     
     
     s/w product
@@ -93,6 +91,30 @@ Layer(s)
     	    ==> JPA with Hibernate-provider
  
     
+ --------------------------------------------------------
+ 
+ 
+ 
+  java based web-layer
+  
+  
+   - servlet : process http-calls
+   - jsp : dynamic html-view
+   
+   
+    MVC based F.Ws
+    
+    1. struts 1.x  ==> Apache
+    2. struts 2.x
+    3. JSF  ( server-side UI components )
+    
+        - 
+    4. Spring MVC
+    
+    -----------------------------------------------------    
+   
+   
+ 
  
  
  

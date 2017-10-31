@@ -31,17 +31,14 @@ public class JPAConfig {
 	// // ..
 	// return dataSource;
 	// }
-	
+
 	@Bean
 	public DataSource dataSource() {
 		EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
-		EmbeddedDatabase db = builder
-			.setType(EmbeddedDatabaseType.H2) //.H2 or .DERBY
-			.addScript("data.sql")
-			.build();
+		EmbeddedDatabase db = builder.setType(EmbeddedDatabaseType.H2) // H2,HSQL,DERBY 
+				.addScript("data.sql").build();
 		return db;
 	}
-	
 
 	@Bean
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
@@ -67,8 +64,9 @@ public class JPAConfig {
 		Properties properties = new Properties();
 		// properties.setProperty("hibernate.hbm2ddl.auto", "create-drop");
 		properties.setProperty("hibernate.show_sql", "true");
-		properties.setProperty("hibernate.format_sql", "true");
-		//properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+		// properties.setProperty("hibernate.format_sql", "true");
+		// properties.setProperty("hibernate.dialect",
+		// "org.hibernate.dialect.MySQL5Dialect");
 		return properties;
 	}
 

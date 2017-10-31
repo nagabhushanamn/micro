@@ -17,8 +17,8 @@ public class App {
 		System.out.println("--------------------------------------------");
 
 		TxrService txrService = context.getBean("txrService", TxrService.class);
-		boolean b = txrService.txr(4230.00, "2", "1");
-		System.out.println(b ? "Enjoy lunch-party" : "Listen-class");
+		boolean b = txrService.txr(500.00, "2", "1");
+		System.out.println(b ? "success" : "Failed");
 
 		System.out.println("--------------------------------------------");
 		context.close();
