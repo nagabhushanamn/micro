@@ -10,11 +10,11 @@
 	
 	<div class="page-header">bank-mts</div>
 	
-	<div class="col-sm-6 col-md-6"> 
+	<div class="col-sm-4 col-md-4 col-sm-5"> 
 		<div class="panel panel-primary">
 		<div class="panel-heading">Txr Status</div>
 		<div class="panel-body">
-				<div class="alert alert-danger">${status}</div>
+				<div class="alert alert-info">${status}</div>
 		</div>
 		</div>
 	</div>
