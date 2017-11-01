@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>bank-mts</title>
 <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body class="container">
@@ -14,7 +14,7 @@
 		<div class="panel panel-primary">
 		<div class="panel-heading">Txr Status</div>
 		<div class="panel-body">
-				<div class="alert alert-info">${status}</div>
+				<div class="alert alert-info">${param.status?'Txr successfull':'Txr Failed'}</div>
 		</div>
 		</div>
 	</div>

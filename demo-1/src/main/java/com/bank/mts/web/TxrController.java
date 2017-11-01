@@ -7,31 +7,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.bank.mts.service.TxrService;
 
 @Controller
-@RequestMapping(value = "/txr")
 public class TxrController {
-	
+
 	@Autowired
 	private TxrService txrService;
 
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value = "/txr", method = RequestMethod.GET)
 	public String showTxrForm() {
-		System.out.println("show Txr-Form");
 		return "txr-form";
 	}
-	
-	@RequestMapping(method = RequestMethod.POST)
-	public ModelAndView doTxr(
-			@RequestParam double amount,
-			@RequestParam String fromAccNum,
-			@RequestParam String toAccNum) {
-		boolean b=txrService.txr(amount, fromAccNum, toAccNum);
-		ModelAndView mav=new ModelAndView();
-		mav.addObject("status", b?"success":"failed");
-		mav.setViewName("txr-status");
+
+	@RequestMapping(value = "txr-status", method = RequestMethod.GET)
+	public String showTxrStatus() {
+		return "txr-status";
+	}
+
+	@RequestMapping(value = "/txr", method = RequestMethod.POST)
+	public ModelAndView doTxr(@RequestParam double amount, @RequestParam String fromAccNum,
+			@RequestParam String toAccNum, RedirectAttributes attributes) {
+		boolean b = txrService.txr(amount, fromAccNum, toAccNum);
+		ModelAndView mav = new ModelAndView();
+		// mav.addObject("status", b?"success":"failed");
+		attributes.addAttribute("status", b);
+		mav.setViewName("redirect:txr-status");
 		return mav;
 	}
 
