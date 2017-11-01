@@ -3,7 +3,7 @@
 --create database mts;
 --use mts;
 
-create table ACCOUNTS(
+create table if not exists ACCOUNTS(
 num varchar(12),
 balance double,
 acc_type varchar(10)
