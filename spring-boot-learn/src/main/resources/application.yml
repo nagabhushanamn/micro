@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  
+spring:
+  autoconfigure:
+    exclude:
+    - org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration
+    
+    
+  dao:
+    exceptiontranslation:
+      enabled: false
+      
+      
+  mvc:
+    favicon:
+      enabled: false
+ 
