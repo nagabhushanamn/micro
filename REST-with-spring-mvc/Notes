@@ -1,0 +1,54 @@
+
+
+How to map URI to Spring-mvc's controller's methods?
+
+
+4 ways
+
+
+-> by path
+-> by http-method
+-> by presence/absence of request-headers
+-> by presence/absence of request-params
+
+---------------------------------------------------
+
+
+
+Ex - mini-FB
+-------------
+
+
+Model
+-------
+
+    a.Story
+    
+        - author: string
+        - message : String
+        
+    b. Comment
+    
+        - byWho
+        - message
+        
+  --------------------------------          
+         
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
