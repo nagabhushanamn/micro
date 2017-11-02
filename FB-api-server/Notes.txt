@@ -1,0 +1,47 @@
+
+
+REST
+-------
+
+ Uniform Interface
+ ------------------
+ 
+ resources
+ ---------
+ 
+ - post
+ - comment
+ 
+a. Identification of resources
+ 
+   GET:    /posts
+   GET:    /posts/{id}
+   POST:   /posts
+   PUT:    /posts/{id}
+   DELETE: /posts/{id}
+   
+   GET:    /posts/{id}/comments
+   GET:    /posts/{id}/comments/{id}
+   DELETE: /posts/{id}/comments{id}
+   PUT:    /posts/{id}/comments/{id}
+   POST:   /posts/{id}/comments
+   
+b. manipulation through representations
+
+   representation(s) : html,json,xml,...
+   
+c. self-descriptive messages
+
+d. HATEOAS
+
+
+
+
+    
+
+      
+   
+     
+   
+   
+   
