@@ -1,0 +1,53 @@
+
+
+ ORM ( Object Relational Mapping )
+ ----------------------------------
+ 
+ 
+ Application : Object/Entity model
+ 
+ Relational DataSource : Relational mode;
+ 
+ ---------------------------------------------
+ 
+ 
+ ORM F.w
+ 
+       JPA  
+       
+          -> Hibernate
+          
+---------------------------------------------
+
+using JPA
+---------
+
+em ==> emf ==> datasource
+
+tm ==> emf
+
+----------------------------------------------     
+
+
+JPA- mapping
+---------------
+
+
+   1. simple-types mapping
+   2. complex-type mapping
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
