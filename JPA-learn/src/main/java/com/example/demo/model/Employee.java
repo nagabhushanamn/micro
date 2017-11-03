@@ -14,7 +14,9 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.ForeignKey;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -49,6 +51,10 @@ public class Employee {
 	@ElementCollection
 	@CollectionTable(name="EMP_ADDRESS")
 	private List<Address> addresses;
+	
+	@ManyToOne
+	@JoinColumn(name="dep_id")
+	private Department department;
 	
 	
 	
