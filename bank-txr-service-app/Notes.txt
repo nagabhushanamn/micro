@@ -1,0 +1,41 @@
+
+
+bank-txr-service
+------------------
+
+
+A.model / entities
+------------------
+
+   a. Account
+   b. Txn
+   
+-------------------------------------- 
+layer(s)
+
+ - repository
+ - service
+ 
+-------------------------------------
+
+
+REST - uniform interface
+
+
+   resource(s)
+	   
+	   /accounts
+	   /accounts/{num}
+	   /accounts/{num}/txns
+	   /accounts/{num}/txns/{id}
+	   
+   
+   representation(s)
+   
+      html,xml,json,pdf,excel,...
+   
+--------------------------------------
+  
+  
+    
+
