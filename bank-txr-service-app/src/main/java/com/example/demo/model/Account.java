@@ -5,13 +5,21 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
+import org.springframework.hateoas.ResourceSupport;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@XmlRootElement
 @Entity
 @Table(name = "ACCOUNTS")
-public class Account {
+public class Account  extends ResourceSupport{
 
 	@Id
 	private String num;
@@ -19,7 +27,9 @@ public class Account {
 	@Enumerated(EnumType.STRING)
 	private AccountType type;
 
-	@OneToMany(mappedBy = "account", targetEntity = Txn.class)
+	@XmlTransient
+	@JsonIgnore
+	@OneToMany(mappedBy = "account", targetEntity = Txn.class,fetch=FetchType.LAZY)
 	private List<Txn> txns;
 
 	public String getNum() {

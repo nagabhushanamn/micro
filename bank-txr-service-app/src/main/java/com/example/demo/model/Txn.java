@@ -15,6 +15,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "TXNS")
 public class Txn {
@@ -30,6 +32,7 @@ public class Txn {
 	private double closingBalance;
 	private double amount;
 
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "num")
 	private Account account;

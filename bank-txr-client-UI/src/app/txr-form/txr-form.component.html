@@ -1,0 +1,25 @@
+
+<div class="panel panel-default">
+	<div class="panel-heading">Txr Form </div>
+	<div class="panel-body">
+		<div class="col-sm-5">
+			<form [formGroup]="txrForm" (submit)="handleSubmit()">
+				
+				<div class="form-group">
+				<label>Amount</label>
+				<input class="form-control" formControlName="amount">
+				</div>
+				<div class="form-group">
+					<label>From Acc Num</label>
+					<input class="form-control" formControlName="from">
+				</div>
+				<div class="form-group">
+					<label>To Acc Num </label>
+					<input class="form-control" formControlName="to">
+				</div>
+				<button class="btn btn-danger">Txr</button>
+					
+			</form>
+		</div>
+	</div>
+</div>
