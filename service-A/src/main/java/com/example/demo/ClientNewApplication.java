@@ -33,7 +33,7 @@ public class ClientNewApplication {
 	@RequestMapping("/")
 	public String getMessage() {
 
-		InstanceInfo instanceInfo = eurekaClient.getNextServerFromEureka("service", false);
+		InstanceInfo instanceInfo = eurekaClient.getNextServerFromEureka("service-b", false);
 		RestTemplate restTemplate=restTemplateBuilder.build();
 		String baseUrl=instanceInfo.getHomePageUrl();
 	
